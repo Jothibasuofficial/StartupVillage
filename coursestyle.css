@@ -1,0 +1,192 @@
+.h1{
+	font-family:"pacifico",cursive;
+	color:white;
+	font-weight: 1200;
+	position:absolute;
+	left:260px;
+	top:20px;
+	font-size:40px;
+}
+body { 
+    background-image: url('bgimage1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content{
+font-family: Lora, Georgia, serif;
+    font-size: 16px;
+    color:white;
+}
+.imgpos1
+{
+	position:absolute;
+	left:200px;
+	top:200px;
+}
+#box    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          background:url(aptitude.png);
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+#box1    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          background:url(bank.png);
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+#box2    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+         background:url(engineers.png);
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+
+#box3    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          background:url(hospital.png);
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+
+#box4    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto; 
+          background:url(history.png);
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               padding:45px 0 66px 0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;}
+
+#box:hover #overlay {
+               opacity:1;}
+#box1:hover #overlay {
+               opacity:1;}
+#box2:hover #overlay {
+               opacity:1;}
+#box3:hover #overlay {
+               opacity:1;}
+#box4:hover #overlay {
+               opacity:1;}
+
+#plus       {  font-family:Lora, Georgia, serif;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:18px;}
+
+#boxpos{
+	position:absolute;
+	left:150px;
+	top:300px;
+}
+#boxpos1{
+	position:absolute;
+	left:550px;
+	top:300px;
+}
+#boxpos2{
+	position:absolute;
+	left:800px;
+	top:0px;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  width:600px;
+   position:absolute;
+    left:400px;
+    top:200px;
+}
+
+li {
+    float: left;
+    border-right:1px solid #c42a0b;
+	width:100px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #c42a0b;
+}
+
+.active {
+    background-color: #c42a0b;
+}

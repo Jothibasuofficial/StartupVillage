@@ -1,0 +1,121 @@
+
+.random { 
+	font-family:"pacifico",cursive;   
+font-size:20px;
+       position: absolute;
+       top:325px; 
+	left:20px;
+       color:white;
+       width:180px;
+       box-sizing: border-box;
+       background:red;
+       
+
+} 
+
+ 
+h2
+{
+ text-align:center;
+font-family:"pacifico",cursive;   
+font-size:40px;
+color:yellow;
+}
+
+.div2
+{ 
+  position:absolute;
+  top:250px;
+  height:100px;
+  left:350px;
+  width:700px;
+  box-sizing: border-box;
+}
+
+h
+{
+   font-size:35px;
+}
+
+
+.div1 {
+    position:absolute;
+    top:380px;
+    
+
+}
+.div3
+{ position:absolute;
+  top:350px;
+  left:220px;
+ font-size:20px;
+ width:830px;box-sizing: border-box;
+
+ } 
+.div1.div4
+{
+ position:absolute;
+ left:1050px;;
+}
+.random.div5
+{ left:1050px;
+}
+
+.div6
+{
+   position:absolute;
+   top:820px;
+  left:450px;
+ font-size:20px;
+  width:50px;box-sizing:
+ 
+}
+.div6.div7
+{
+   position:absolute;
+   top:820px;
+  left:700px;
+ font-size:20px;
+  width:50px;
+}
+
+p a {
+  font-size:20px;
+  color:green;
+  text-decoration:none;
+  display:inline-block;
+}
+.button
+{
+  background-color: red; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+p{
+font-family:"pacifico",cursive;   
+font-size:20px;
+   position:absolute;
+   left:70px;
+   height:10px;
+	color:white;
+}
+p1
+{
+  
+font-size:30px;
+  color:green;
+}
+.ol{
+border-style: groove;
+width:200px;
+font-size:20px;
+text-decoration:none;
+}
+

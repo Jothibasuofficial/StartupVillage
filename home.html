@@ -1,0 +1,179 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mainpage.css">
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+<title>Homepage</title>
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5baf5e;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#cover{ 
+position:fixed;
+ top:0;
+ left:0;
+ background:rgba(0,0,0,0.6);
+ z-index:5;
+ width:100%; 
+height:100%;
+ display:none; 
+} 
+#loginScreen {
+ height:380px;
+ width:340px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(login.png) 
+no-repeat;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#loginScreen:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+.cancel
+{
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    background:rgb(245,245,245);
+    color:black;
+    height:30px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<h1 class="h1">Competitive Exams Preparation & Practice</h1>
+<ul>
+  <li><a  href="home.html">Home</a></li>
+<li ><a href="login.html">Login</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a href="signup.html">Sign Up</a></li>
+  <li ><a href="about.html">About</a></li>
+</ul>
+<!-- Navigation ends here-->
+<div id="boxpos">
+<div id="box">
+  
+  <div id="overlay">
+    	<span id="plus">Learning is  beginning of wealth.<br/>
+ 	Learning is  beginning of health. <br/>
+	Learning is  beginning of spirituality.</span><br/>
+	<a href="courses.html"><button class="button"><span>Learn here</span></button></a>
+  </div>
+</div>
+</div>
+<div id="boxpos1">
+ <div id="box1">
+	<div id="overlay">
+	<span id="plus">Practice makes perfect<br/>
+	There is no glory in practice,<br/>but without practice,<br/>there is no glory.
+	</span><br/>
+	<a href="practice.html"><button class="button"><span>Practice here</span></button></a>
+	
+</div>
+</div>
+</div>
+
+<div align="center" style="position:absolute;top:500px;left:1200px;">
+	<br><br><br><br>
+	<a href="#loginScreen" style="text-decoration:none">
+<font style="color:darkorange;font-size:20px;">
+Developers</font></a>
+</div>
+<div id="loginScreen" style="position:absolute;top:0px;right:10px;">
+	<center><h2 style="color:white;">
+<font style="color:darkorange;font-size:30px;">Founder</font><br/>
+Jothibasu</br>
+<font style="color:darkorange;font-size:30px;">Co-founders:</font><br/>
+Dhandapani<br/>
+Kiruba<br/>
+Bhuvaneshwari<br/>
+Sangeetha<br/>
+Magudeeswaran<br/>
+Niresh<br/>
+Dinesh<br/>
+Suthakar<br/>
+Navin<br/>
+</h2><center/>
+    <a href="#" class="cancel">&times;</a>
+</div>
+<div id="cover" >
+</div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
